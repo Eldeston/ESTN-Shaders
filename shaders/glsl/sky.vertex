@@ -1,0 +1,40 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "vertexVersionSimple.h"
+
+#include "uniformWorldConstants.h"
+#include "uniformPerFrameConstants.h"
+#include "uniformShaderConstants.h"
+#include "uniformRenderChunkConstants.h"
+
+// Including files that contains the calculations.....
+#include "gl_assets/functionLib.glsl"
+#include "gl_assets/globalPrecision.glsl"
+
+attribute mediump vec4 POSITION;
+attribute vec4 COLOR;
+
+varying vec4 color;
+
+const float fogNear = 0.3;
+
+void main()
+{
+    vec4 hsv = rgb2hsv(CURRENT_COLOR);
+	Value = clamp2((hsv.z - .1) / (1. - .1));
+	rainA = clamp2(pow((.7 - FOG_CONTROL.x) / (FOG_CONTROL.y - FOG_CONTROL.x), 3.));
+
+	vec4 sphere = POSITION;
+    float gradient = length(sphere.xz);
+	sphere.y -= gradient * mix(skyMax, skyMin, MIX2(0., 1., 0., hsv.z));
+	gl_Position = WORLDVIEWPROJ * sphere;
+    
+    vec4 sky = mix(MIX2(n_color, s_color, d_color, Value), FOG_COLOR, rainA);
+    
+    #ifdef UNDERWATER
+    	color = FOG_COLOR;
+	#else
+		color = MIX2(sky, vec4(FOG_COLOR.rgb * 1.8, 1), FOG_COLOR, gradient);
+	#endif
+}

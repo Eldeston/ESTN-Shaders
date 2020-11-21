@@ -1,0 +1,174 @@
+// Line 10, 13, 15
+{
+  "sun_moon": {
+    "states": [
+      "DisableDepthWrite",
+      "DisableAlphaWrite",
+      "Blending"
+    ],
+
+    "blendSrc": "SourceAlpha",
+    "blendDst": "One",
+
+		"vertexShader" : "shaders/sunMoon.vertex",
+		"vrGeometryShader": "shaders/uv.geometry",
+		"fragmentShader" : "shaders/sunMoon.fragment",
+   	 "vertexFields": [
+      { "field": "Position" },
+      { "field": "UV1" },
+      { "field": "UV0" },
+      { "field": "Normal" }
+    ],
+
+    "samplerStates": [
+      {
+        "samplerIndex": 0,
+        "textureFilter": "Point"
+      }
+    ],
+
+    "msaaSupport": "Both"
+  },
+
+  "sun_moon_below_water:sun_moon": {
+    "states": [ "Blending" ],
+
+    "frontFace": {
+      "stencilFunc": "Equal"
+    },
+
+    "backFace": {
+      "stencilFunc": "Equal"
+    },
+
+    "stencilRef": 2,
+    "stencilReadMask": 255
+  },
+  
+  "stars": {
+  "+defines": [ "UNIVERSAL" ],
+    "states": [
+      "DisableDepthWrite",
+      "DisableAlphaWrite",
+      "Blending"
+    ],
+
+    "blendSrc": "OneMinusDestColor",
+    "blendDst": "One",
+
+		"vertexShader" : "shaders/stars.vertex",
+		"vrGeometryShader" :  "shaders/color.geometry",
+		"fragmentShader" : "shaders/stars.fragment",
+    "vertexFields": [
+      { "field": "Position" },
+      { "field": "Color" }
+    ],
+
+    "samplerStates": [
+      {
+        "samplerIndex": 0,
+        "textureFilter": "Point"
+      }
+    ],
+
+    "msaaSupport": "Both"
+  },
+
+  "cubemap": {
+    "states": [
+      "Blending"
+    ],
+
+    "blendSrc": "SourceAlpha",
+    "blendDst": "OneMinusSrcAlpha",
+
+    "vertexShader": "shaders/cubemap.vertex",
+    "vrGeometryShader": "shaders/uv.geometry",
+    "fragmentShader": "shaders/cubemap.fragment",
+    "samplerStates": [
+      {
+        "samplerIndex": 0,
+        "textureFilter": "Point"
+      }
+    ],
+    "vertexFields": [
+      { "field": "Position" },
+      { "field": "UV0" }
+    ],
+
+    "msaaSupport": "Both",
+    "variants": [
+      // Added macros
+        { "lit": { "+defines": [ "ALWAYS_LIT" ] } },
+        { "fog.underwater": { "+defines": [ "UNDERWATER" ] } }
+      ]
+  },
+
+  "stars_below_water:stars": {
+    "states": [ "Blending" ],
+
+    "frontFace": {
+      "stencilFunc": "Equal"
+    },
+
+    "backFace": {
+      "stencilFunc": "Equal"
+    },
+
+    "stencilRef": 2,
+    "stencilReadMask": 255
+  },
+  
+  "skyplane": {
+    "+states": [ "DisableAlphaWrite" ],
+
+		"vertexShader" : "shaders/sky.vertex",
+		"vrGeometryShader" : "shaders/sky.geometry",
+		"fragmentShader" : "shaders/color.fragment",
+    "vertexFields": [
+      { "field": "Position" },
+      { "field": "Color" }
+    ],
+    "msaaSupport": "Both",
+    "variants": [
+      // Added macros
+        { "lit": { "+defines": [ "ALWAYS_LIT" ] } },
+        { "fog.underwater": { "+defines": [ "UNDERWATER" ] } }
+      ]
+  },
+
+  "skyplane_below_water:skyplane": {
+    "states": [ "EnableStencilTest" ],
+ 
+     "frontFace": {
+       "stencilFunc": "NotEqual"
+     },
+ 
+     "backFace": {
+       "stencilFunc": "NotEqual"
+     },
+ 
+     "stencilRef": 2,
+     "stencilReadMask": 255
+  },
+
+  "end_sky": { 
+    "states":[ "DisableDepthWrite", "DisableAlphaWrite" ],
+
+    "msaaSupport": "Both",
+
+    "vertexShader" : "shaders/uv_repeat.vertex" ,
+    "vrGeometryShader": "shaders/uv.geometry",
+    "fragmentShader" : "shaders/texture_ccolor.fragment",
+
+    "vertexFields": [
+      { "field": "Position" },
+      { "field": "Color" },
+      { "field": "UV0" }
+    ],
+
+    "samplerStates": [ 
+      { "samplerIndex": 0, "textureWrap": "Repeat" } 
+    ]
+  }
+}

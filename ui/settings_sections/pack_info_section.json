@@ -1,0 +1,205 @@
+{
+  "namespace": "pack_info_section",
+
+// Info section //
+  
+  "pack_info_button@settings_common.section_toggle_base": { 
+    "$toggle_view_binding_name": "pack_info_button_toggle",
+    "$glyph_texture": "pack_icon",
+    "$glyph_color_texture": "pack_icon",
+    "$glyph_size": [ 24, 24 ],
+    "$button_text": "More Info",
+    "$toggle_property_bag": {
+      "#panel_title": "Information" 
+    }
+  },
+  "pack_info_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "pack_info_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      {   
+        "icon": {
+          "type": "image",
+	       "anchor_from": "middle",
+           "anchor_to": "middle",
+           "offset": [ 0, 0 ],
+           "texture": "textures/ui/title",
+           "layer": 3,
+           "uv": [ 0, 0 ],
+           "uv_size": [ 0, 0 ],
+           "size": [ "100%", 80 ]
+        }
+      },
+      // Main section
+      {
+        "header@how_to_play_common.header": {
+          "$text": "Pack info"
+        }
+	  },
+      {
+        "paragraph_text@how_to_play_common.paragraph": {
+  	     "text": "Published by: §9FlameRender Studios"
+   	   }
+  	  },
+ 	   {
+  	    "paragraph_text@how_to_play_common.paragraph": {
+     	    "text": "Developed by: §aEldeston"
+           }
+	     },
+         {
+   	 "selector_group_lable_1@settings_common.selector_group_label": {
+          "text": "Version: §a1.6.2"
+        }
+	  },
+ 	   {
+  	    "paragraph_text@how_to_play_common.paragraph": {
+     	    "text": "License: §cGNU GPL §e(see 'Preset settings')"
+           }
+	     },
+      {
+        "header@how_to_play_common.header": {
+          "$text": "Info and introduction"
+        }
+	  },
+      {
+        "paragraph_text@how_to_play_common.paragraph": {
+  	    "text": "   ESTN Shaders (ESTN is like a shorter ver. of the Eldeston) is a shader pack made to change your gameplay looks, like the tone of the blocks, the new sky render, water render and much more! Presented to you by FlameRender Studios."
+  	  }
+      },
+      {
+        "spacer_0": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {   
+        "icon": {
+          "type": "image",
+	       "anchor_from": "middle",
+           "anchor_to": "middle",
+           "offset": [ 0, 0 ],
+           "texture": "textures/images/pic1",
+           "layer": 3,
+           "uv": [ 0, 0 ],
+           "uv_size": [ 0, 0 ],
+           "size": [ "100%", 150 ]
+        }
+      },
+      {   
+        "icon": {
+          "type": "image",
+	       "anchor_from": "middle",
+           "anchor_to": "middle",
+           "offset": [ 0, 0 ],
+           "texture": "textures/images/pic2",
+           "layer": 3,
+           "uv": [ 0, 0 ],
+           "uv_size": [ 0, 0 ],
+           "size": [ "100%", 150 ]
+        }
+      },
+      {   
+        "icon": {
+          "type": "image",
+	       "anchor_from": "middle",
+           "anchor_to": "middle",
+           "offset": [ 0, 0 ],
+           "texture": "textures/images/pic3",
+           "layer": 3,
+           "uv": [ 0, 0 ],
+           "uv_size": [ 0, 0 ],
+           "size": [ "100%", 150 ]
+        }
+      },
+      {   
+        "icon": {
+          "type": "image",
+	       "anchor_from": "middle",
+           "anchor_to": "middle",
+           "offset": [ 0, 0 ],
+           "texture": "textures/images/pic4",
+           "layer": 3,
+           "uv": [ 0, 0 ],
+           "uv_size": [ 0, 0 ],
+           "size": [ "100%", 150 ]
+        }
+      },
+      {   
+        "icon": {
+          "type": "image",
+	       "anchor_from": "middle",
+           "anchor_to": "middle",
+           "offset": [ 0, 0 ],
+           "texture": "textures/images/pic5",
+           "layer": 3,
+           "uv": [ 0, 0 ],
+           "uv_size": [ 0, 0 ],
+           "size": [ "100%", 150 ]
+        }
+      },
+      {
+        "header@how_to_play_common.header": {
+          "$text": "Preset settings"
+        }
+      },
+      {
+        "paragraph_text@how_to_play_common.paragraph": {
+          "text": "I purposely made this pack to be easily modified for users to customize their experience through the presets within this pack. You might need a file editor to access and edit the files, before you go do some editing, read the ESTN_Shaders_License_and_Information.docx before you do your stuff first."
+        }
+      },
+      {
+        "spacer_0": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {   
+        "icon": {
+          "type": "image",
+	       "anchor_from": "middle",
+           "anchor_to": "middle",
+           "offset": [ 0, 0 ],
+           "texture": "textures/images/feature01",
+           "layer": 3,
+           "uv": [ 0, 0 ],
+           "uv_size": [ 0, 0 ],
+           "size": [ "100%", 150 ]
+        }
+      },
+      {   
+        "icon": {
+          "type": "image",
+	       "anchor_from": "middle",
+           "anchor_to": "middle",
+           "offset": [ 0, 0 ],
+           "texture": "textures/images/feature02",
+           "layer": 3,
+           "uv": [ 0, 0 ],
+           "uv_size": [ 0, 0 ],
+           "size": [ "100%", 150 ]
+        }
+      },
+      {
+        "spacer_0": {
+          "type": "panel",
+          "size": [ 0, 5 ]
+        }
+      },
+      {
+        "paragraph_text@how_to_play_common.paragraph": {
+          "text": "And that's all I can tell ya about this pack, if you've misunderstood something, join our server and let's talk about it. The link will be found here: §9§mhttps://discord.gg/j7H2ntP §r(obviously you won't be able to click this because it doesn't allow you so you'll have to type it lol)"
+        }
+      }
+    ]
+  }
+}

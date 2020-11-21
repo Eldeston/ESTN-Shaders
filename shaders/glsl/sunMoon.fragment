@@ -1,0 +1,61 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "fragmentVersionCentroid.h"
+
+#if __VERSION__ >= 300
+
+#if defined(TEXEL_AA) && defined(TEXEL_AA_FEATURE)
+_centroid in highp vec2 uv;
+#else
+_centroid in vec2 uv;
+#endif
+
+#else
+
+varying vec2 uv;
+
+#endif
+
+#include "uniformShaderConstants.h"
+#include "util.h"
+#include "uniformPerFrameConstants.h"
+
+// Including files...
+#include "gl_assets/functionLib.glsl"
+#include "gl_assets/globalPrecision.glsl"
+
+varying lowp vec2 position;
+
+LAYOUT_BINDING(0) uniform sampler2D TEXTURE_0;
+
+void main()
+{
+#if !defined(TEXEL_AA) || !defined(TEXEL_AA_FEATURE)
+	vec4 diffuse = texture2D( TEXTURE_0, uv );
+#else
+	vec4 diffuse = texture2D_AA(TEXTURE_0, uv );
+#endif
+
+#ifdef ALPHA_TEST
+	if(diffuse.a < 0.5)
+		discard;
+#endif
+
+dayA = pow(clamp2(1. - FOG_COLOR.b * 1.2), .5);
+nightA = pow(clamp2(1. - FOG_COLOR.r * 1.5),1.2);
+
+float sunRange = smoothstep(.64, -.24, length(position));
+vec3 sunCol = mix(mix(sd_color, ss_color, dayA), sn_color, nightA).rgb;
+
+float S = 1. - length(pow(position / mix(sizeSun / 1000., sizeMoon / 1000., nightA), vec2(sunPow)));
+S = pow(clamp2(S * 1.8), 1.8);
+vec3 ssCol = mix(sunCol * 2., vec3(1), S);
+vec4 newCol = vec4(mix(sunCol * sunRange, ssCol, S), mix(sunRange, S, S));
+
+#ifdef CSUN
+	gl_FragColor = newCol * CURRENT_COLOR;
+#else
+	gl_FragColor = diffuse * CURRENT_COLOR;
+#endif
+}

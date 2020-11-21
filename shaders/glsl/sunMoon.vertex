@@ -1,0 +1,28 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "vertexVersionCentroidUV.h"
+#include "uniformWorldConstants.h"
+
+// Including files...
+#include "gl_assets/functionLib.glsl"
+#include "gl_assets/globalPrecision.glsl"
+
+attribute POS4 POSITION;
+attribute vec2 TEXCOORD_0;
+
+varying lowp vec2 position;
+
+void main()
+{
+    #ifdef CSUN
+		vec4 N = POSITION * vec4(12, .25, 12, 1);
+		N.y -= .32;
+	#else
+		vec4 N = POSITION;
+	#endif
+    gl_Position = WORLDVIEWPROJ * N;
+    position = POSITION.xz;
+
+    uv = TEXCOORD_0;
+}

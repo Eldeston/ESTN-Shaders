@@ -1,0 +1,83 @@
+// Line 24, 25, 26, 27, 28, 29
+{
+  "materials": {
+    "version": "1.0.0",
+
+    "particles_base": {
+      "vertexShader": "shaders/color_uv.vertex",
+      "vrGeometryShader": "shaders/color_uv.geometry",
+      "fragmentShader": "shaders/particles.fragment",
+
+      "vertexFields": [
+        { "field": "Position" },
+        { "field": "Color" },
+        { "field": "UV0" }
+      ],
+
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Point"
+        }
+      ],
+
+      "msaaSupport": "Both"
+      "variants": [
+        { "fog": { "+defines": [ "FOG" ] } },
+        { "lit": { "+defines": [ "ALWAYS_LIT" ] } },
+        { "underwater": { "+defines": [ "UNDERWATER", "FOG" ] } },
+        { "fog.underwater": { "+defines": [ "UNDERWATER" ] } }
+      ]
+    },
+
+    "particles_opaque:particles_base": {
+      "+defines": [ "ENABLE_FOG" ],
+      "+states": [ "DisableAlphaWrite" ]
+    },
+
+    "particles_alpha:particles_base": {
+
+      "+defines": [ "ALPHA_TEST", "ENABLE_FOG" ],
+      "+states": [ "DisableAlphaWrite" ]
+    },
+
+    "particles_blend:particles_base": {
+
+      "+defines": [ "ENABLE_FOG" ],
+      "+states": [
+        "Blending",
+        "DisableCulling",
+        "DisableDepthWrite"
+      ]
+    },
+
+    "particles_effects:particles_alpha": {
+
+      "+defines": [ "EFFECTS_OFFSET" ],
+      "msaaSupport": "Both"
+    },
+
+    "particles_random_test": {
+      "vertexShader": "shaders/particle_random_test.vertex",
+
+      "vertexFields": [
+        { "field": "Position" },
+        { "field": "Color" },
+        { "field": "Normal" },
+        { "field": "UV0" }
+      ],
+
+      "+samplerStates": [
+        {
+          "samplerIndex": 0,
+          "textureFilter": "Point"
+        }
+      ],
+
+      "+defines": [ "ALPHA_TEST", "ENABLE_FOG" ],
+      "+states": [ "DisableAlphaWrite" ],
+
+      "msaaSupport": "Both"
+    }
+  }
+}

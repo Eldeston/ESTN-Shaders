@@ -1,0 +1,47 @@
+// __multiversion__
+// This signals the loading code to prepend either #version 100 or #version 300 es as apropriate.
+
+#include "vertexVersionSimple.h"
+#include "uniformWorldConstants.h"
+#include "uniformPerFrameConstants.h"
+#include "uniformShaderConstants.h"
+
+// Including files...
+#include "gl_assets/functionLib.glsl"
+#include "gl_assets/globalPrecision.glsl"
+
+attribute vec4 POSITION;
+attribute vec4 COLOR;
+
+varying vec4 color;
+
+const float fogNear = 0.9;
+
+const vec3 inverseLightDirection = vec3(0.62, 0.78, 0.0);
+const float ambient = 0.7;
+
+void main()
+{
+	Value = pow(clamp2(maxC(CURRENT_COLOR) * 1.2), 1.2);
+	Value = clamp2((Value - .35) / (1. - .35));
+	rainA = clamp2(pow((.7 - FOG_CONTROL.x) / (FOG_CONTROL.y - FOG_CONTROL.x), 3.));
+	
+    POS4 pos = WORLDVIEWPROJ * POSITION;
+	POS4 worldPos = WORLD * POSITION;
+	gl_Position = pos;
+
+	float depth = length(worldPos.xyz) / RENDER_DISTANCE;
+	float fog = clamp2(depth - fogNear);
+	float gradient = clamp2(POSITION.y);
+
+	// We're going to overwrite the color of the clouds and use the presets' provided color
+	color = vec4(vec3(1), COLOR.a);
+	#ifdef CCLOUDS
+		color.a *= mix(gradientA1, gradientA2, gradient);
+		color.rgb *= mix(gradientB1, gradientB2, gradient);
+		color *= mix(MIX2(cn_color, cs_color, cd_color, Value), FOG_COLOR + vec4(vec3(.12), 0), rainA);
+	#else
+		color *= mix(MIX2(cn_color, cs_color, cd_color, Value), FOG_COLOR + vec4(vec3(.12), 0), rainA);
+	#endif
+	color.a *= 1. - fog;
+}
