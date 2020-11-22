@@ -11,7 +11,7 @@ Description still in progress in the stage of preparing to archive.
 * [Bugs and errors](#bugs-and-errors)
 * [Configuration](#configuration)
 * [License](#license)
-* [Discord community server](#discord-community-server)
+* [About creator](#about-creator)
 
 ## Disclaimer
    This shader is only for mobile and Win10 editions of Minecraft. There will be no Console version of this shader as it has the Render Dragon Engine which can’t run any shader packs from the previous engine. For more info, continue reading the description.
@@ -36,6 +36,9 @@ Description still in progress in the stage of preparing to archive.
 ## License
    This shader has been completely overhauled which means I can give it a new license, so this pack now uses the GNU GPL License. This means you can share/repost this pack anywhere except here and McpeDL as long as there is a copyright notice. I recommend that you should inform me before you go repost this shader. Info about this license will be found at https://choosealicense.com/licenses/gpl-3.0/ or in LICENSE.txt
 
-## Discord community server
+## About creator
    Come join my Discord server to talk about other developments made by our Studio!
    https://discord.gg/j7H2ntP
+   Or follow me on Twitter or subscribe to my Youtube channel to get updated with my recent developments!
+   https://twitter.com/eldeston
+   https://www.youtube.com/channel/UCQCkkFh25ydxZwCqpBhJJlg?view_as=subscriber
