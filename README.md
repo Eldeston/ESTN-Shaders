@@ -31,7 +31,7 @@ Description still in progress in the stage of preparing to archive.
    Most of the bugs known in ESTN Shaders at the moment are precision related, and some for some reason, not solvable. Most of these issues came from iOS devices and some from ancient android devices. However these bugs are hard for me to fix, so it might be better to use this shader on mid to high end phones or use a preset that minifies those bugs. For Win10, there is a bug when you mess with the AA (anti-aliasing) toggle it makes everything black, it seems to only happen if the AA is off.
 
 ## Configuration
-   (No guide made yet)
+   (No guide or tutorial created yet)
    
 ## License
    This shader has been completely overhauled which means I can give it a new license, so this pack now uses the GNU GPL License. This means you can share/repost this pack anywhere except here and McpeDL as long as there is a copyright notice. I recommend that you should inform me before you go repost this shader. Info about this license will be found at https://choosealicense.com/licenses/gpl-3.0/ or in LICENSE.txt
