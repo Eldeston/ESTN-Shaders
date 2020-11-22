@@ -38,7 +38,11 @@ Description still in progress in the stage of preparing to archive.
 
 ## About creator
    Come join my Discord server to talk about other developments made by our Studio!
+   
    https://discord.gg/j7H2ntP
+   
    Or follow me on Twitter or subscribe to my Youtube channel to get updated with my recent developments!
+   
    https://twitter.com/eldeston
+   
    https://www.youtube.com/channel/UCQCkkFh25ydxZwCqpBhJJlg?view_as=subscriber
