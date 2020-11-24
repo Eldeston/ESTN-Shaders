@@ -3,6 +3,8 @@ Description still in progress in the stage of preparing to archive.
 ## Introduction
    ESTN Shaders (short ver. of Eldeston) is a shader pack made to change your gameplay’s looks through shaders, like the water noise, plant waves, shader based sun and moon, monochromatic weather, and much more! Presented to you by FlameRender Studios.
 
+![Pic_A](/textures/images/pic1.png)
+
 ## Table of contents
 * [Disclaimer](#disclaimer)
 * [From the creator](#from-the-creator)
@@ -32,19 +34,19 @@ Description still in progress in the stage of preparing to archive.
 
 ## Configuration
    One of ESTN's ability is to change the entire looks of it just by editing the global preset files. Here are some intel about the files:
-```
-functionLib.glsl - The main global function definitions or the function library. Contains data for executing specific instructions for things like water noise. Do not mess with it.
 
-globalPrecision.glsl - Contains certain variable precisions. Used to change the precision of specific variables that may cause buggy results. Do not mess with it unless results are unstable.
+* functionLib.glsl - The main global function definitions or the function library. Contains data for executing specific instructions for things like water noise. Do not mess with it.
 
-presetDefnitions.fr - The main global variable definitions. Contains data for the color of the sky sky, torches, clouds, togglables, and others. Edit with precise input.
-```
+* globalPrecision.glsl - Contains certain variable precisions. Used to change the precision of specific variables that may cause buggy results. Do not mess with it unless results are unstable.
+
+* presetDefnitions.fr - The main global variable definitions. Contains data for the color of the sky sky, torches, clouds, togglables, and others. Edit with precise input.
+
 All of these files are available in the `gl_assets` folder in both glsl(mobile) and hlsl(Win10) folders.
 ## License
-   This shader has been completely overhauled which means I can give it a new license, so this pack now uses the GNU GPL License. This means you can share/repost this pack anywhere except here and McpeDL as long as there is a copyright notice. I recommend that you should inform me before you go repost this shader. Info about this license will be found at https://choosealicense.com/licenses/gpl-3.0/ or in LICENSE.txt
+   This shader has been completely overhauled which means I can give it a new license, so this pack now uses the GNU GPL License. This means you can share/repost this pack anywhere except here and McpeDL as long as there is a copyright notice. I recommend that you should inform me before you go repost this shader. Info about this license will be found at https://choosealicense.com/licenses/gpl-3.0/ or in `LICENSE.txt`.
 
 ## About creator
-   Come join my Discord server to talk about other developments made by our Studio!
+   Come join my Discord server to talk about other developments made by our studio-community!
    
    https://discord.gg/j7H2ntP
    
