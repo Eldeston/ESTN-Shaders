@@ -41,6 +41,8 @@ Description still in progress in the stage of preparing to archive.
 
 * `presetDefnitions.fr` - The main global variable definitions. Contains data for the color of the sky, torches, clouds, togglables, and others. Edit with precise input.
 
+* `convertWin10.fr` - A special file made to convert certain glsl variables to hlsl. Do not mess with it as it may cause the shader to lose compatibility with Win10.
+
 All of these files are available in the `gl_assets` folder in both glsl(mobile) and hlsl(Win10) folders.
 
 ## License
