@@ -44,7 +44,7 @@ Description still in progress in the stage of preparing to archive.
 All of these files are available in the `gl_assets` folder in both glsl(mobile) and hlsl(Win10) folders.
 
 ## License
-   This shader has been completely overhauled which means I can give it a new license, so this pack now uses the GNU GPL License. This means you can share/repost this pack anywhere except here and McpeDL as long as there is a copyright notice. I recommend that you should inform me before you go repost this shader. Info about this license will be found at https://choosealicense.com/licenses/gpl-3.0/ or in `LICENSE.txt`.
+   This shader has been completely overhauled which means I can give it a new license, so this pack now uses the GNU GPL License. This means you can share/repost this pack anywhere except here and McpeDL as long as there is a copyright notice. I recommend that you should inform me before you go repost this shader. Info about this license will be found at [choosealicense.com](https://choosealicense.com/licenses/gpl-3.0/) or in `LICENSE.txt`.
 
 ## About creator
    Come join my Discord server to talk about other developments made by our studio-community!
