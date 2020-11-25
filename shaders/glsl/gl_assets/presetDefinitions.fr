@@ -1,6 +1,7 @@
 /* Welcome to the Preset Dashboard 6.0! Here is where you can make changes
 to the shader pack's settings!
 There should be document included within this pack which shows some information and instructions.
+Otherwise visit ESTN Shader's wiki!: https://github.com/Eldeston/ESTN-Shaders/wiki/Configuring-customizing-ESTN-Shaders
 The variables here should be understandable here so you won't get confused*/
 
 /* Here are the togglable pack settings, disable any of these features if your phone can't handle the computation
@@ -73,7 +74,7 @@ You can disable any of these features by typing "//" next to the feature to turn
 // Normal map detail level, keep it low as it is too strong
 #define normDetail 0.005
 
-// Default light color (The values here are low because adding color tint to lightes looks weird, but you can change it)
+// Default light color (The values here are low because adding color tint to lights looks weird, but you can change it)
 #define lightCol vec3(0.15, 0.1, 0.05)
 
 // The angle of the light in a fixed position in degrees, if CUSTOM_ANGLE is on
