@@ -2,8 +2,11 @@ Description still in progress in the stage of preparing to archive.
 
 # Introduction
    **ESTN Shaders** (short ver. of Eldeston) is a shader pack made to change your gameplay’s looks through shaders, like the water noise, plant waves, shader based sun and moon, monochromatic weather, and much more! Presented to you by FlameRender Studios.
-
 ![Pic_A](/textures/images/pic1.png)
+![Pic B](/textures/images/pic2.png)
+![Pic C](/textures/images/pic3.png)
+![Pic D](/textures/images/pic4.png)
+![Pic E](/textures/images/pic5.png)
 
 # Table of contents
 * [Disclaimer](#disclaimer)
@@ -33,7 +36,7 @@ Description still in progress in the stage of preparing to archive.
    Most of the bugs known in ESTN Shaders at the moment are precision related, and some for some reason, not solvable. Most of these issues came from iOS devices and some from ancient android devices. However these bugs are hard for me to fix, so it might be better to use this shader on mid to high end phones or use a preset that minifies those bugs. For Win10, there is a bug when you mess with the AA (anti-aliasing) toggle it makes everything black, it seems to only happen if the AA is off.
 
 # Configuration
-   Information about the configuration and customization of this shader is found in this repository's wiki page [here](https://github.com/Eldeston/ESTN-Shaders/wiki). Will be planning to upload preset files on the wiki made by the server-community.
+   Information about the configuration and customization of this shader is found in this repository's wiki page [here](https://github.com/Eldeston/ESTN-Shaders/wiki). Will be planning to upload preset files on the wiki made by the server-community. A video tutorial will be planned later as well.
 
 # License
    This shader has been completely overhauled which means I can give it a new license, so this pack now uses the GNU GPL License. This means you can share/repost this pack anywhere except here and McpeDL as long as there is a copyright notice. I recommend that you should inform me before you go repost this shader. Info about this license will be found at [choosealicense.com](https://choosealicense.com/licenses/gpl-3.0/) or in `LICENSE.txt`.
