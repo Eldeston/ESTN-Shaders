@@ -28,7 +28,7 @@
    I have mentioned that 1.6.0 will be the last update for ESTN Shaders, due to a lot of unfixable bugs and performance issues, but today, I will give one more last update for Win10 users who would love to experience ESTN Shaders on their PCs. So yeah, it’s the last update for real, but I’m developing other stuff too. I’m planning on creating another shader to become a successor of ESTN once Render Dragon is out on all platforms. So please keep an eye on my next projects!
 
 # Special thanks
-   Huuuuge thank you to Xanion for creating a port for ESTN on Win10! I didn’t have a laptop so he helped port ESTN to rhe Win10 edition of Minecraft. Check out his content here on this [site](https://mcpedl.com/user/xanion/!)
+   Huuuuge thank you to Xanion for creating a port for ESTN on Win10! I didn’t have a laptop so he helped port ESTN to the Win10 edition of Minecraft. Check out his content here on this [McpeDL](https://mcpedl.com/user/xanion/)!
 
 # Official McpeDL upload
    ESTN just happen to be on McpeDL too! Check it out [here](https://mcpedl.com/estn-shaders/?cookie_check=1).
