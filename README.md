@@ -1,6 +1,7 @@
-Description still in progress in the stage of preparing to archive.
+![Title](textures/ui/title.png)
+[![Discord](https://img.shields.io/discord/604061216779796492.svg?logo=discord&logoColor=white&logoWidth=20&labelColor=7289DA&label=Discord)](https://discord.gg/4XNhkcd)
 
-# Introduction
+# Description
    **ESTN Shaders** (short ver. of Eldeston) is a shader pack made to change your gameplay’s looks through shaders, like the water noise, plant waves, shader based sun and moon, monochromatic weather, and much more! Presented to you by FlameRender Studios.
 ![Pic_A](/textures/images/pic1.png)
 ![Pic B](/textures/images/pic2.png)
@@ -43,7 +44,7 @@ Description still in progress in the stage of preparing to archive.
 
 # About creator
    Come join my Discord server to talk about other developments made by our studio-community!
-   * [FlameRender Studios Discord Server](https://discord.gg/j7H2ntP)
+   * [Flamerender Studios Discord](https://discord.gg/j7H2ntP)
    
    Or follow me on Twitter or subscribe to my Youtube channel to get updated with my recent developments!
    * [@Eldeston's Twitter](https://twitter.com/eldeston)
