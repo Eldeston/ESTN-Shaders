@@ -51,5 +51,6 @@
    * [@Eldeston's Channel](https://www.youtube.com/channel/UCQCkkFh25ydxZwCqpBhJJlg?view_as=subscriber)
 
 # Downloads
+   Extract the pack to your resource pack folder after dowloading the pack. Make sure the shader is prioritized above all the other packs.
    * [ESTN Github Edition 1.6.3 (latest)](https://github.com/Eldeston/ESTN-Shaders/archive/master.zip)
    * [ESTN Official 1.6.2](https://drive.google.com/file/d/1E44ah7tZrr2WXHXdumUlM0Fxt2U1_cvv/view)
