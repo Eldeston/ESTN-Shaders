@@ -45,7 +45,7 @@
 
 # About creator
    Come join my Discord server to talk about other developments made by our studio-community!
-   * [Flamerender Studios Discord](https://discord.gg/j7H2ntP)
+   * [Flamerender Studios Discord](https://discord.gg/4XNhkcd)
    
    Or follow me on Twitter or subscribe to my Youtube channel to get updated with my recent developments and contents!
    * [@Eldeston's Twitter](https://twitter.com/eldeston)
