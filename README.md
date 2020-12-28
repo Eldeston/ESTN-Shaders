@@ -51,6 +51,9 @@
    * [@Eldeston's Twitter](https://twitter.com/eldeston)
    * [@Eldeston's Channel](https://www.youtube.com/channel/UCQCkkFh25ydxZwCqpBhJJlg?view_as=subscriber)
 
+   You can become a supporter by doing any of the above, or donate through paypal!
+   * [@Paypal donation](https://www.paypal.com/donate?hosted_button_id=4XLQ4WE296JKW)
+
 # Downloads
    Extract the pack to your resource pack folder after dowloading the pack. Make sure the shader is prioritized above all the other packs. These links use no ad shorteners in case you can't download it through one of the download links in McpeDL. If possible, **please** use at least one of the download links in McpeDL for support.
    * [ESTN Github Edition 1.6.3 (latest)](https://github.com/Eldeston/ESTN-Shaders/archive/master.zip)
