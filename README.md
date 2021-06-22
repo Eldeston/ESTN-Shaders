@@ -44,6 +44,9 @@
    This shader has been completely overhauled which means I can give it a new license, so this pack now uses the GNU GPL License. This means you can share/repost this pack anywhere except McpeDL as long as there is a copyright notice. I recommend that you should inform me before you go repost this shader. Info about this license will be found at [choosealicense.com](https://choosealicense.com/licenses/gpl-3.0/) or in `LICENSE.txt`.
 
 # About creator
+   Check out my latest project **Super Duper Vanilla**, a shader pack for **Minecraft Java Optifine**!
+   [![img](https://github.com/Eldeston/Super-Duper-Vanilla/blob/master/shaders/textures/title.png)](https://github.com/Eldeston/Super-Duper-Vanilla)
+   
    Come join my Discord server to talk about other developments made by our studio-community!
    * [Flamerender Studios Discord](https://discord.gg/4XNhkcd)
    
