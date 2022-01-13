@@ -21,7 +21,7 @@
 * [About creator](#about-creator)
 
 # Disclaimer
-   This shader is **only for mobile and Win10 editions** of Minecraft. There will be **no Console version** of this shader as it has the Render Dragon Engine which can’t run any shader packs from the previous engine. For more info, continue reading the description.
+   This shader is **only for iOS editions** of Minecraft. There will be **no Console, Windows, or Android version** of this shader as it has the Render Dragon Engine which can’t run any shader packs from the previous engine. For more info, continue reading the description.
 
    This shader also works on **Minecraft Education Edition** in certain versions. However, the results may be different compared to other platforms. **This shader supports Minecraft Bedrock v1.16.0+**. Minecraft versions with the **new engine** will not be able to apply shaders like this into the game as the new engine doesn’t support shaders from the old engine, *please check the changelog of the version of Minecraft you’re playing if it has been updated to Render Dragon.*
 
