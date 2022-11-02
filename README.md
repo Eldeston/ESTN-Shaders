@@ -48,7 +48,7 @@
    [![img](https://github.com/Eldeston/Super-Duper-Vanilla/blob/master/shaders/textures/title.png)](https://github.com/Eldeston/Super-Duper-Vanilla)
    
    Come join my Discord server to talk about other developments made by our studio-community!
-   * [Flamerender Studios Discord](https://discord.gg/4XNhkcd)
+   * [Flamerender Studios Discord](https://discord.gg/UE85W5ynCg)
    
    Or follow me on Twitter or subscribe to my Youtube channel to get updated with my recent developments and contents!
    * [@Eldeston's Twitter](https://twitter.com/eldeston)
